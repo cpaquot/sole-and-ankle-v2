@@ -27,13 +27,20 @@ const Header = () => {
 };
 
 const MainHeader = styled.div`
-  padding: 0 32px;
+  padding: 10px 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: baseline;
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  display: flex;
+  align-content: space-evenly;
+`;
 
 const NavLink = styled.a`
+  flex: 1 1 auto;
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
